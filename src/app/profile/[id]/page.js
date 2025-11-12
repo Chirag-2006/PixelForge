@@ -33,12 +33,12 @@ export default async function ProfilePage({ params }) {
 
   if (!data) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-blue-50">
+      <div className="min-h-screen bg-linear-to-br from-purple-50 via-white to-blue-50">
         <Navbar />
         <main className="container mx-auto px-4 py-8">
           <div className="text-center py-20">
             <h1 className="text-3xl font-bold text-gray-900 mb-4">User Not Found</h1>
-            <p className="text-gray-600">This user doesn't exist or hasn't published any images yet.</p>
+            <p className="text-gray-600">This user doesn&apos;t exist or hasn&apos;t published any images yet.</p>
           </div>
         </main>
       </div>
@@ -48,12 +48,12 @@ export default async function ProfilePage({ params }) {
   const { user, images } = data;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-blue-50">
+    <div className="min-h-screen bg-linear-to-br from-purple-50 via-white to-blue-50">
       <Navbar />
       
       <main className="container mx-auto px-4 py-8">
         <div className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">{user.name}'s Gallery</h1>
+          <h1 className="text-3xl font-bold text-gray-900 mb-2">{user.name}&apos;s Gallery</h1>
           <p className="text-gray-600">{user.email}</p>
           <p className="text-sm text-gray-500 mt-2">
             {images.length} published {images.length === 1 ? 'image' : 'images'}
