@@ -21,7 +21,7 @@ export default function UpgradeModal({ isOpen, onClose }) {
             Upgrade to Pro
           </DialogTitle>
           <DialogDescription>
-            You've reached the free plan limit of 5 images. Upgrade to Pro for unlimited image generation!
+            You&apos;ve reached the free plan limit of 5 images. Upgrade to Pro for unlimited image generation!
           </DialogDescription>
         </DialogHeader>
         

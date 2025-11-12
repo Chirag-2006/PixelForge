@@ -20,7 +20,7 @@ export default async function Home() {
   const images = await getPublicImages();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-blue-50">
+    <div className="min-h-screen bg-linear-to-br from-purple-50 via-white to-blue-50">
       <Navbar />
       
       <main className="container mx-auto px-4 py-8">
