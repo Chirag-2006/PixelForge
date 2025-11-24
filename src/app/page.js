@@ -34,8 +34,7 @@ export default async function Home() {
             Discover Amazing AI Art
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Explore stunning images created by our community using AI. Sign in
-            to start creating your own masterpieces!
+            Explore stunning images created by our community using AI.{ !user && " Sign in to start creating your own masterpieces!"}
           </p>
 
           {!user && <PromptInput />}
